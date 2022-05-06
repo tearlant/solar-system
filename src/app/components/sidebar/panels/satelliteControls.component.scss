@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+
++------------------------------------------------------------+
+|                   namepanel satname                        |
++------------------------------------------------------------+
+|                      nopad nomarg                          |
+|    +---------------------+------------+  +-------------+   |
+|    | slidercontainercell |            |  |             |   |
+|    +---------------------+ rangevalue |  | ivoryborder |   |
+|    |       bodynote      |            |  |planet-canvas|   |
+|    +---------------------+------------+  |             |   |
+|    | slidercontainercell |            |  +-------------+   |
+|    +---------------------+ rangevalue |  | ivoryborder |   |
+|    |       bodynote      |            |  |             |   |
+|    +---------------------+------------+  +-------------+   |
+|    | slidercontainercell |            |  | ivoryborder |   |
+|    +---------------------+ rangevalue |  |             |   |
+|    |       bodynote      |            |  +-------------+   |
+|    +---------------------+------------+                    |
+|                                                            |
++------------------------------------------------------------+
+
+*/
+
+.slidercontainertable{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:2px;
+  margin-bottom:3.5px;
+}
+
+.selected {
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.namepanel {
+	background-color: #32056d;
+	width: 100%;
+}
+
+.satname {
+  color: rgb(243, 182, 70);
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-size: 1.3em;
+	padding-bottom:0px;
+	width: 100%;
+}
+
+
+.copyright {
+  padding: 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: .4em;
+  color: wheat;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}

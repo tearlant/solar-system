@@ -1,0 +1,22 @@
+<table style="width:96%;margin-left:auto;margin-right:auto">
+    <tbody>
+        <tr>
+            <td class="ivoryborder planet-canvas">
+                <sidebar-window-viewport [texturePath]="TexturePath" #panelViewport></sidebar-window-viewport>
+            </td>
+        </tr>
+        <tr>
+            <td class="ivoryborder td-wrapper" style="padding-top:1.5px;padding-bottom:1.5px">
+                <div class="texture-input">
+                    <input type="file" id="upload-texture" class="file-type">
+                    <label for="upload-texture">Change Texture</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="ivoryborder" style="padding-top:1.5px;padding-bottom:1.5px">
+                <div class="add-satellite" (click)="addSatellite()">Add Satellite</div>
+            </td>
+        </tr>
+    </tbody>
+</table>

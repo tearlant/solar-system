@@ -1,0 +1,29 @@
+<tr>
+    <table style="table-layout:fixed;width:210px">
+        <colgroup>
+            <col style="width:168px;">
+            <col style="width:42px;">
+        </colgroup>
+        <tr>
+            <td class="slidercontainercell">
+                <input
+                    class="range"
+                    type="range"
+                    name=""
+                    value="{{value}}"
+                    min="{{sliderMin}}"
+                    max="{{sliderMax}}"
+                    disabled="{{DisableSlider}}"
+                    [(ngModel)]="sliderVal"
+                    (ngModelChange)="rangeSlide($event)"
+                />
+            </td>
+            <td class="rangevalue">
+                {{DisableSlider ? 'n/a' : Value}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bodynote">{{notation}}</td>
+        </tr>
+    </table>
+</tr>
