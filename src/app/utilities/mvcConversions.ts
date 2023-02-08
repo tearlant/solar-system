@@ -24,12 +24,6 @@ export interface SatelliteDataWrapper {
 // For convenience, we want the backend expressed in angular velocity and the frontend in orbital period.
 // For convenience, the frontend uses percentage values
 export namespace ConversionUtility {
-    // export const getAllViewData: (ssModel: SolarSystemModel) => SatellitePanelViewParameters[] = (ssModel) => {
-    //     const allData: BackendSatelliteData[] = ssModel.SatelliteData;
-    //     const output: SatellitePanelViewParameters[] = allData.map((backendData) => ConversionUtility.backendToView(backendData, ssModel));
-    //     return output;
-    // }
-
     export const backEndToViewParams: (backend: BackendSatelliteData, ssModel: SolarSystemModel) => SatellitePanelViewParameters = (backend, ssModel) => {
         return {
             name: backend.name,

@@ -56,7 +56,6 @@ export class Controller {
         this.solarSystemModel.renameSatellite(satelliteId, newName);
     }
 
-    // TODO
     public removeSatellite(satelliteId: string): void {
         // A bit convoluted, but SolarSystemViewport needs to pass its scene to the Backend, and this initiates the pipeline
         this.deleteSubject.next(satelliteId);

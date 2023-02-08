@@ -148,7 +148,6 @@ export class SatelliteModel {
 	public set Parameters(value: SatelliteBackEndParameters) {
 		this.capturePhaseAndTime();
 		const scalingFactor = Math.max(value.bodyRadius / this.parameters.bodyRadius, 0.01);
-		//this.mesh.geometry.scale(scalingFactor, scalingFactor, scalingFactor);
 		this.scaleThisAndAllChildren(scalingFactor);
 		this.parameters = value;
 	}

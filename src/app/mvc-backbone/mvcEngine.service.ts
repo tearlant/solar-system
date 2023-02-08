@@ -15,7 +15,6 @@ export class MVCEngineService {
     private controlModel = new ControlModel(this.solarSystemModel);
     private controller = new Controller(this.solarSystemModel, this.controlModel);
     private cameraModel = new CameraModel(this.solarSystemModel.Sun, new Vector3(0,0,60), Math.PI/6, 70, 0, -0.017);
-    //private sidePanelView = new SidePanelView(this.solarSystemModel, this.controller);
 
     constructor() {}
 
