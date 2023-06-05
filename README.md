@@ -4,7 +4,9 @@ Working model hosted at https://tearlant.github.io/solar-system/
 
 This project demonstrates how simple it is to model a solar system with a sun, orbited by planets, which are orbited by moons, which could theoretically be orbited by moons of moons, and moons of moons of moons, etc.
 
-As all bodies are in a moving and rotating coordinate frame, it is simple to animate a satellite with respect to its primary, but the system can become complex as every primary has a different set of local coordinates. By using a three-frame algorithm at the back end, the front end logic is simplified so that planets and moons can be added and their paramaters can be dynamically adjusted, and there are no calculations seen in the front end code.
+In the source code, variable names use the astronomy terms "satellite" and "primary" to distinguish bodies. A satellite orbits its primary.
+
+As all bodies are constantly moving and rotating, it is simple to animate a satellite with respect to its primary, but the system can become complex as every primary has a different set of local coordinates. By using a three-frame algorithm at the back end, the front end logic is simplified so that planets and moons can be added and their paramaters can be dynamically adjusted, and there are no calculations seen in the front end code.
 
 # Angular
 
